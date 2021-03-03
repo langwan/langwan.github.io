@@ -8,22 +8,15 @@ layout: default
   {{ content }}
 </div>
 
-<div id="gitmentContainer"></div>
-<link
-  rel="stylesheet"
-  href="https://imsun.github.io/gitment/style/default.css"
-/>
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<div id="vcomments"></div>
 <script>
-  var gitment = new Gitment({
-    owner: "langwanluo@gmail.com",
-    repo: "blog.langgo.cn.gitment",
-    oauth: {
-      client_id: "ea62604b58b617ed41a9",
-      client_secret: "e938ea221e48e1d566c330ca7d1beba1ebfa6dde",
-    },
+  new Valine({
+    el: "#vcomments",
+    appId: "tJYmsIz6W3pge8mQflWriT2X-gzGzoHsz",
+    appKey: "KxKwC5qTeDdiXxxPX9DRAt1O",
   });
-  gitment.render("gitmentContainer");
 </script>
 
 {% if site.related_posts.size >= 1 %}
