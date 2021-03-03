@@ -8,7 +8,23 @@ layout: default
   {{ content }}
 </div>
 
-<div>{% include gitment.html %}</div>
+<div id="gitmentContainer"></div>
+<link
+  rel="stylesheet"
+  href="https://imsun.github.io/gitment/style/default.css"
+/>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    owner: "langwanluo@gmail.com",
+    repo: "blog.langgo.cn.gitment",
+    oauth: {
+      client_id: "ea62604b58b617ed41a9",
+      client_secret: "e938ea221e48e1d566c330ca7d1beba1ebfa6dde",
+    },
+  });
+  gitment.render("gitmentContainer");
+</script>
 
 {% if site.related_posts.size >= 1 %}
 <div class="related">
