@@ -1,0 +1,5 @@
+baseURL = "http://langwan.github.io/"
+languageCode = "en-us"
+title = "langwan"
+BookSection = 'docs'
+theme = "hugo-book"
