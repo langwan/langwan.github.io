@@ -1,5 +1,6 @@
 baseURL = "http://langwan.github.io/"
-languageCode = "en-us"
-title = "langwan"
-BookSection = 'docs'
+languageCode = "zh-Hans"
+title = "痴货发明家"
 theme = "hugo-book"
+[params]
+  BookSection = 'book'
