@@ -1,4 +1,5 @@
 ---
+bookHidden: true
 title: "io.ReadFull"
 ---
 
