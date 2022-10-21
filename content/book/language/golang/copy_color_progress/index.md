@@ -28,6 +28,8 @@ func main() {
 
 语言自带的 io.Copy 可以完成拷贝，但是不能提供进度条，所以我们要自己解决问题
 
+## 带进度条的代码
+
 代码
 
 ```go
@@ -71,7 +73,7 @@ func progress(n float64) {
 }
 ```
 
-## 带进度条的代码
+
 
 在 [langgo](https://github.com/langwan/langgo) 框架里我实现了一个 helper_os.CopyFileWatcher 方法，允许传入一个 helper_os.IOProgressListener 实例，当发生文件copy的时候会通过 ProgressChanged 回调进度
 
