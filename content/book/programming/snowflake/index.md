@@ -3,6 +3,7 @@ title: "snowflake id"
 ---
 
 # snowflake id
+## 原理
 
 ```
   41bits  |   10bits   |     12bits
@@ -50,6 +51,14 @@ timestamp | machine id | sequence number
 
 ```
 
+之前我使用的是 <https://github.com/bwmarrin/snowflake> 的go实现版本，现在我实现了自己的版本，并更新到了langgo框架当中。
+
+## 代码和视频
+
+<https://github.com/langwan/chihuo/tree/main/go%E8%AF%AD%E8%A8%80/snowflake>
+
+<https://www.bilibili.com/video/BV18P411A7pa/>
 
 [^1]: <https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake>
 [^2]: <https://en.wikipedia.org/wiki/Snowflake_ID>
+
