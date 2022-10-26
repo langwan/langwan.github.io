@@ -1,8 +1,8 @@
 ---
-title: "snowflake"
+title: "snowflake id"
 ---
 
-# snowflake
+# snowflake id
 
 ```
   41bits  |   10bits   |     12bits
@@ -12,7 +12,7 @@ timestamp | machine id | sequence number
 
 最早是twitter采用的，需要每秒生成数万不重复的id号。[^1]
 
-特点 多结点生产 不重复 有序
+特点 多结点部署 不重复 有序的 ID
 
 > We currently use MySQL to store most of our online data. In the beginning, the data was in one small database instance which in turn became one large database instance and eventually many large database clusters. For various reasons, the details of which merit a whole blog post, we’re working to replace many of these systems with the Cassandra distributed database or horizontally sharded MySQL (using gizzard).
 
