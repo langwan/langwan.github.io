@@ -158,3 +158,9 @@ import (
 	"testing"
 )
 ```
+
+## 代码和视频
+
+<https://github.com/langwan/chihuo/tree/main/go%E8%AF%AD%E8%A8%80/%E5%AE%9E%E7%8E%B0%E5%A4%A7%E6%96%87%E4%BB%B6%E7%9A%84HTTP%E4%B8%8B%E8%BD%BD>
+
+<https://www.bilibili.com/video/BV118411Y7B8/>

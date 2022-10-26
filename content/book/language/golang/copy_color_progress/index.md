@@ -192,3 +192,8 @@ func CopyFileWatcher(dst string, src string, buf []byte, listener IOProgressList
 
 代码 21-24 这个和 io.copyBuffer 是一致的 当 buf = nil 会自动创建一个 32 * 1024 的 buf 来提供读写缓存，提升 buf 大小只是影响 回调的频率，但对于花费的时间 影响不大
 
+## 代码和视频
+
+<https://github.com/langwan/chihuo/tree/main/go%E8%AF%AD%E8%A8%80/%E7%BB%99%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E5%A2%9E%E5%8A%A0%E8%BF%9B%E5%BA%A6%E6%9D%A1>
+
+<https://www.bilibili.com/video/BV1nt4y1u7pi/>
