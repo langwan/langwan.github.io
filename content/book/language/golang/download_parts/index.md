@@ -20,7 +20,7 @@ title: "并发分片文件下载"
 func main() {
 	url := "https://xxx/xxx.mp4"
     // 这里会启动一个携程池
-    langgo.Run(&Instance{})
+    langgo.Run(&download.Instance{})
     //这里会切分文件，下载分片合并
     Get().Download(context.Background(), url, "./example.mp4", &Listener{})
 }
